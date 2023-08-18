@@ -1,6 +1,7 @@
 import axios from "axios";
 import tokenService from "@/utils/tokenService";
 import { NEXT_APP_BASE_URL } from "@/shared/config";
+import { getAuth } from "./getUrl";
 
 export const instance = axios.create({
   baseURL: NEXT_APP_BASE_URL,
