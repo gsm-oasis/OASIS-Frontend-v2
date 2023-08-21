@@ -9,7 +9,8 @@ import * as I from "@/assets";
 import { Setting } from "@/components/common/frame";
 import Question from "./question";
 import DiaryList from "@/components/common/diary";
-import Image from "next/image";
+import tokenService from "@/utils/tokenService";
+import { loggedAtom } from "@/atom/container";
 
 const defaultProps: DiaryProps = {
   nickname: "",
@@ -31,6 +32,7 @@ function Main() {
   const [hoverMail, setHoverMail] = useState(false);
   const [hoverCalender, setHoverCalender] = useState(false);
   const router = useRouter();
+  const [logged] = useRecoilState(loggedAtom);
 
   const getHeartColor = (heartLevel: number) => {
     switch (heartLevel) {
@@ -51,8 +53,10 @@ function Main() {
 
       setContent(response.data);
       setName(response.data.nickname);
-    } catch (error) {
-      return error;
+    } catch (e: any) {
+      if (e.response.status === 403) {
+        router.push("/login");
+      }
     }
   };
 
