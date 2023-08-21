@@ -33,6 +33,10 @@ export const StyledLink = styled(Link)`
   &:active {
     text-decoration: none;
   }
+  text-decoration: none;
+  margin-top: 12px;
+  margin-left: 80px;
+  color: #959595;
 `;
 
 export const BottomTextBox = styled.div`

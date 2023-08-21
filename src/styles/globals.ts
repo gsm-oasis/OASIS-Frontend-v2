@@ -13,11 +13,11 @@ const GlobalStyle = createGlobalStyle`
   font-family: 'Apple SD Gothic Neo';
   a {
     text-decoration: none;
-  color: black;
-  margin-left: 125px;
-  font-size: 12px;
-  margin-top: 10px;
-  color: #959595;
+    color: black;
+    margin-left: 125px;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #959595;
   }
 
   html,
