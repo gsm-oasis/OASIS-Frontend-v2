@@ -68,13 +68,10 @@ function Main() {
             <S.LeftBox>
               <S.CoupleName>
                 <div>{mainContent?.coupleNickname}</div>
-                {/* <Image
-                  src="%PUBLIC_URL%/Hearts.svg"
-                  alt="heart"
-                  fill={getHeartColor(mainContent?.heartLevel)}
-                  width={20}
-                  height={20}
-                /> */}
+                <I.Hearts
+                  color={getHeartColor(mainContent?.heartLevel)}
+                  len="20px"
+                />
                 <div>{mainContent?.nickname}</div>
               </S.CoupleName>
               <S.DateDays>{mainContent?.datingDate} DAYS</S.DateDays>

@@ -15,3 +15,5 @@ export { Mail, ColorMail } from "./mail";
 export { Next } from "./next";
 
 export { Calender, ColorCalender } from "./calender";
+
+export { Hearts } from "./hearts";
