@@ -1,15 +1,17 @@
-export { Logo, smallLogo } from "./Logo";
+export { Logo, smallLogo } from "./logo";
 
-export { Back } from "./Back";
+export { Back } from "./back";
 
-export { Heart, BlankHeart, RedHeart } from "./Heart";
+export { Heart, BlankHeart, RedHeart } from "./heart";
 
-export { SettingIcon } from "./Setting";
+export { SettingIcon } from "./setting";
 
-export { Plus } from "./Plus";
+export { Plus, BoldPlus } from "./plus";
 
-export { DeleteButton } from "./Delete";
+export { DeleteButton } from "./delete";
 
-export { Mail } from "./Mail";
+export { Mail, ColorMail } from "./mail";
 
-export { Next } from "./Next";
+export { Next } from "./next";
+
+export { Calender, ColorCalender } from "./calender";
