@@ -5,9 +5,7 @@ import Image from "next/image";
 export default function Loading() {
   return (
     <Background>
-      <div style={{ width: 10 }}>
-        <Image src={Spinner} alt="로딩중" />
-      </div>
+      <Image src={Spinner} alt="로딩중" />
     </Background>
   );
 }
