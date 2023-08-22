@@ -29,11 +29,6 @@ export const getUser = {
   linkCouple: () => {
     return NEXT_APP_BASE_URL + "user";
   },
-
-  setBirthday: () => {
-    return NEXT_APP_BASE_URL + "user/anniversary";
-  },
-
   getInfo: () => {
     return NEXT_APP_BASE_URL + "user";
   },
@@ -87,7 +82,10 @@ export const getHeart = {
 };
 
 export const getAnniversary = {
-  getaAnniversary: () => {
+  getAnniversary: () => {
+    return NEXT_APP_BASE_URL + "anniversary";
+  },
+  setBirthday: () => {
     return NEXT_APP_BASE_URL + "anniversary";
   },
 };

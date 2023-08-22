@@ -1,4 +1,4 @@
-import { getUser } from "../data/getUrl";
+import { getAnniversary, getUser } from "../data/getUrl";
 import { instance } from "../data/instance";
 
 class User {
@@ -20,8 +20,9 @@ class User {
     try {
       return instance({
         method: "POST",
-        url: getUser.setBirthday(),
-        params: {
+        url: getAnniversary.setBirthday(),
+        data: {
+          anniversaryName: "생일",
           anniversaryDate: birthday,
         },
       });
