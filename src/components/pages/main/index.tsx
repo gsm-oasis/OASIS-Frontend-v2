@@ -72,10 +72,12 @@ function Main() {
             <S.LeftBox>
               <S.CoupleName>
                 <div>{mainContent?.coupleNickname}</div>
-                <I.Hearts
-                  color={getHeartColor(mainContent?.heartLevel)}
-                  len="20px"
-                />
+                <div style={{ width: 20, height: 20 }}>
+                  <I.Hearts
+                    color={getHeartColor(mainContent?.heartLevel)}
+                    len="20"
+                  />
+                </div>
                 <div>{mainContent?.nickname}</div>
               </S.CoupleName>
               <S.DateDays>{mainContent?.datingDate} DAYS</S.DateDays>
