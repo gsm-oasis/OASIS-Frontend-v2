@@ -32,7 +32,6 @@ function Main() {
   const [hoverMail, setHoverMail] = useState(false);
   const [hoverCalender, setHoverCalender] = useState(false);
   const router = useRouter();
-  const [logged] = useRecoilState(loggedAtom);
 
   const getHeartColor = (heartLevel: number) => {
     switch (heartLevel) {
