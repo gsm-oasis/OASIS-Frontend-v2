@@ -22,9 +22,9 @@ export const TextArea = styled.textarea`
   }
 `;
 
-export const Count = styled.p<{ isError: boolean }>`
+export const Count = styled.p<{ $isError: boolean }>`
   position: absolute;
   right: 20px;
-  color: ${(props) => (props.isError ? "#e10000" : "#4b4b4b")};
+  color: ${(props) => (props.$isError ? "#e10000" : "#4b4b4b")};
   bottom: 0;
 `;

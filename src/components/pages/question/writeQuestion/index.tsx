@@ -73,7 +73,7 @@ function WriteQuestionComment(props: any) {
               value={myComment}
               maxLength={100}
             ></TextArea>
-            <Count isError={isError}>{answerCount} / 100</Count>
+            <Count $isError={isError}>{answerCount} / 100</Count>
           </TextBox>
 
           <GradiantButton onClick={postMyComment}>답변 저장</GradiantButton>

@@ -37,7 +37,7 @@ function DiaryList(props: DiaryProps): JSX.Element {
           </S.DiaryTitleFrame>
           <S.DiaryBody>{props.DiaryProps.content}</S.DiaryBody>
           <S.CreatePersonWrapper>
-            <S.Circle isMine={props.nickname === props.DiaryProps.writer} />
+            <S.Circle $isMine={props.nickname === props.DiaryProps.writer} />
             {props.DiaryProps.writer}
           </S.CreatePersonWrapper>
         </S.DiaryTextFrame>
