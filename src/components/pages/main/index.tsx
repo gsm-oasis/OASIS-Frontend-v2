@@ -9,8 +9,7 @@ import * as I from "@/assets";
 import { Setting } from "@/components/common/frame";
 import Question from "./question";
 import DiaryList from "@/components/common/diary";
-import tokenService from "@/utils/tokenService";
-import { loggedAtom } from "@/atom/container";
+import Link from "next/link";
 
 const defaultProps: DiaryProps = {
   nickname: "",
@@ -54,7 +53,8 @@ function Main() {
       setName(response.data.nickname);
     } catch (e: any) {
       if (e.response.status === 403) {
-        router.push("/login");
+        localStorage.removeItem("recoil-persist");
+        router.replace("/login");
       }
     }
   };
@@ -138,15 +138,16 @@ function Main() {
               </S.IconBox>
             </S.RightBox>
           </S.Top>
-          <div
-            onClick={() =>
-              router.push("/questionComment", {
-                query: {
-                  Id: mainContent?.questionId,
-                  content: mainContent?.content,
-                },
-              })
-            }
+          <Link
+            href={{
+              pathname: "/questionComment/[...questionId]",
+              query: {
+                params: [
+                  mainContent.questionId.toString(),
+                  mainContent.content,
+                ],
+              },
+            }}
             style={{ cursor: "pointer" }}
           >
             <Question
@@ -154,7 +155,7 @@ function Main() {
               content={mainContent?.content}
               description="질문을 클릭해서 답변을 남겨보세요!"
             />
-          </div>
+          </Link>
 
           <S.Line />
           <S.DiaryFrame>
