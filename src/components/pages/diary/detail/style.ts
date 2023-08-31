@@ -18,8 +18,8 @@ export const ImageWrapper = styled.div`
 
 // export const Image = styled.img``;
 
-export const ImageBox = styled.div<{ image: string }>`
-  background: url(${(props) => props.image});
+export const ImageBox = styled.div<{ $image: string }>`
+  background: url(${(props) => props.$image});
   width: 140px;
   flex-shrink: 0;
   height: 200px;

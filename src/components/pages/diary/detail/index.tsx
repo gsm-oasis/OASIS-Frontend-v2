@@ -28,7 +28,7 @@ function DiaryDetail(): JSX.Element {
               {diaryContent &&
                 diaryContent?.imgs.map((image) => (
                   <div key={image.idx}>
-                    <S.ImageBox image={image.imageUrl} />
+                    <S.ImageBox $image={image.imageUrl} />
                   </div>
                 ))}
             </S.ImageWrapper>
