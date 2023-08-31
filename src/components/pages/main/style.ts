@@ -77,6 +77,7 @@ export const DiaryTitleFrame = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 27px;
 `;
 
 export const DTitle = styled.div`
@@ -89,7 +90,7 @@ export const DTitle = styled.div`
 export const DiaryWrapper = styled.div`
   padding-left: 20px;
   margin-left: -20px;
-  width: 395px;
+  width: 409px;
   height: 440px;
   overflow-y: auto;
   &::-webkit-scrollbar {
