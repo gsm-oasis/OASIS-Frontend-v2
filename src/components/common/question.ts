@@ -44,7 +44,7 @@ export const QuestionDescription = styled.div`
 `;
 
 export const QuestionCommentBox = styled.div`
-  width: 360px;
+  width: 375px;
   padding-right: 15px;
   margin-top: 25px;
   min-height: 60px;

@@ -22,9 +22,24 @@ export const TextArea = styled.textarea`
   }
 `;
 
+export const TextBox = styled.div`
+  margin-top: 25px;
+  width: 375px;
+  box-shadow: 0px 0px 18px rgba(169, 169, 169, 0.25);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  padding-bottom: 24px;
+  position: relative;
+`;
+
 export const Count = styled.p<{ $isError: boolean }>`
   position: absolute;
   right: 20px;
   color: ${(props) => (props.$isError ? "#e10000" : "#4b4b4b")};
   bottom: 0;
+  margin: 16px 0px;
+  font-size: 16px;
 `;
