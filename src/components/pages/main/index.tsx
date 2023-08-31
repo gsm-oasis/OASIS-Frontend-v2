@@ -148,7 +148,7 @@ function Main() {
                 ],
               },
             }}
-            style={{ cursor: "pointer" }}
+            style={{ cursor: "pointer", textDecoration: "none" }}
           >
             <Question
               questionNum={mainContent?.questionId}
