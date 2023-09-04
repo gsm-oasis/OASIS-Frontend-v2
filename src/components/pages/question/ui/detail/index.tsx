@@ -3,7 +3,7 @@ import * as S from "./style";
 import { Frame, Setting } from "@/components/common/frame";
 import { EmptyCompo, Title, TitleText } from "@/components/common/title";
 import { Back } from "@/assets";
-import Question from "../../main/question";
+import Question from "../../../main/question";
 import {
   MyCoupleEmptyAnswer,
   QuestionCommentBox,

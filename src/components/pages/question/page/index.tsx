@@ -1,8 +1,8 @@
 import question from "@/network/request/question";
 import { QuestionContent, QuestionListContent } from "@/types/question.type";
 import React, { useEffect, useState } from "react";
-import QuestionDetail from "./detail";
-import WriteQuestionComment from "./writeQuestion";
+import QuestionDetail from "../ui/detail";
+import WriteQuestionComment from "../ui/writeQuestion";
 
 const defaultQuestion: QuestionContent = {
   userName: "",
