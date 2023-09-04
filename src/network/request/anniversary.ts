@@ -1,4 +1,3 @@
-import tokenService from "@/utils/tokenService";
 import { getAnniversary } from "../data/getUrl";
 import { instance } from "../data/instance";
 
@@ -7,7 +6,7 @@ class Anniversary {
     try {
       return instance({
         method: "GET",
-        url: getAnniversary.getaAnniversary(),
+        url: getAnniversary.getAnniversary(),
       });
     } catch (error) {
       return error;
@@ -18,7 +17,7 @@ class Anniversary {
     try {
       return instance({
         method: "POST",
-        url: getAnniversary.getaAnniversary(),
+        url: getAnniversary.getAnniversary(),
         data: {
           anniversaryName: anniversaryName,
           anniversaryDate: anniversaryDate,
