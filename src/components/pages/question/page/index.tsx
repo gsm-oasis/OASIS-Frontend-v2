@@ -18,7 +18,7 @@ const Question = ({
 }: {
   id: string | undefined;
   content: string | undefined;
-  noWrite: boolean | undefined;
+  noWrite: string | boolean;
 }) => {
   const [questionContent, setQuestionContent] =
     useState<QuestionContent>(defaultQuestion);
