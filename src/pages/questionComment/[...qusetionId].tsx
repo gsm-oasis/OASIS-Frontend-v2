@@ -1,5 +1,12 @@
-import Question from "@/components/pages/question/page";
+import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
+
+const Question = dynamic(
+  () => import("@/components/pages/question/page/index"),
+  {
+    ssr: false,
+  }
+);
 
 export default function QuestionCommentPage() {
   const router = useRouter();
