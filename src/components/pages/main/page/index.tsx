@@ -7,7 +7,7 @@ import * as S from "./style";
 import { useRouter } from "next/router";
 import * as I from "@/assets";
 import { Setting } from "@/components/common/frame";
-import Question from "./question";
+import Question from "../ui/question";
 import DiaryList from "@/components/common/diary";
 import Link from "next/link";
 
@@ -122,12 +122,16 @@ function Main() {
                 onMouseOver={() => setHover(true)}
                 onMouseLeave={() => setHover(false)}
                 onClick={() =>
-                  router.push("/heartLevel", {
-                    query: {
-                      level: mainContent?.heartLevel,
-                      days: mainContent?.datingDate,
+                  router.push(
+                    {
+                      pathname: "/heartLevel",
+                      query: {
+                        level: mainContent?.heartLevel,
+                        days: mainContent?.datingDate,
+                      },
                     },
-                  })
+                    "/heartLevel"
+                  )
                 }
               >
                 {!hoverState && <I.BlankHeart />}

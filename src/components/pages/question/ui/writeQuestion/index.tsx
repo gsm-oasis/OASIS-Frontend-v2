@@ -11,7 +11,7 @@ import React, { useState } from "react";
 import { toast } from "react-toastify";
 import { Count, TextArea, TextBox } from "./style";
 import { GradiantButton } from "@/components/common/button";
-import Question from "../../../main/question";
+import Question from "../../../main/ui/question";
 import { Back } from "@/assets";
 
 function WriteQuestionComment(props: any) {
