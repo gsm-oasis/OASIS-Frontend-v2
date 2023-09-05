@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 export const QuestionBox = styled.div`
   width: 375px;

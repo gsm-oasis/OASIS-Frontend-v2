@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 export const ImageFrame = styled.div`
   margin-top: 50px;
@@ -15,8 +15,6 @@ export const ImageWrapper = styled.div`
   white-space: nowrap;
   align-items: center;
 `;
-
-// export const Image = styled.img``;
 
 export const ImageBox = styled.div<{ $image: string }>`
   background: url(${(props) => props.$image});

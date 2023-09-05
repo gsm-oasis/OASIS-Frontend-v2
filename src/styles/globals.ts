@@ -1,16 +1,14 @@
-import { createGlobalStyle } from "styled-components";
-import reset from "styled-reset";
+import { css } from "@emotion/react";
+import emotionReset from "emotion-reset";
 
-const GlobalStyle = createGlobalStyle`
-  ${reset};
+export const global = css`
+  ${emotionReset};
   @font-face {
-    font-family: 'JaldiBold';
+    font-family: "JaldiBold";
     font-style: normal;
-    src: url('/font/Jaldi-Bold.woff') format('woff');
+    src: url("/font/Jaldi-Bold.woff") format("woff");
   }
 
-
-  font-family: 'Apple SD Gothic Neo';
   a {
     text-decoration: none;
     color: black;
@@ -38,9 +36,10 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  body, button {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-    Helvetica Neue, sans-serif;
+  body,
+  button {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   button {
@@ -48,8 +47,6 @@ const GlobalStyle = createGlobalStyle`
     border: none;
     outline: none;
     background-color: transparent;
-    -webkit-tap-highlight-color : transparent;
+    -webkit-tap-highlight-color: transparent;
   }
 `;
-
-export default GlobalStyle;
