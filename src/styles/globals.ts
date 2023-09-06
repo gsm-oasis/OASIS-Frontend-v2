@@ -12,9 +12,7 @@ export const global = css`
   a {
     text-decoration: none;
     color: black;
-    margin-left: 125px;
     font-size: 12px;
-    margin-top: 10px;
     color: #959595;
   }
 
