@@ -18,7 +18,7 @@ export const Modal = styled.form`
     margin-top: 36px;
   }
   p {
-    margin-top: -10px;
+    margin-top: 10px;
     font-size: 12px;
     font-weight: 600;
     color: #959595;
