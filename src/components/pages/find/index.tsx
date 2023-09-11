@@ -16,7 +16,7 @@ function Find() {
             <div onClick={() => router.push("/login")}>
               <I.Back />
             </div>
-            <I.smallLogo />
+            <I.SmallLogo />
             <EmptyCompo />
           </Title>
 

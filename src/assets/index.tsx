@@ -1,4 +1,4 @@
-export { Logo, smallLogo } from "./logo";
+export { Logo, SmallLogo } from "./logo";
 
 export { Back } from "./back";
 

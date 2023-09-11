@@ -41,7 +41,7 @@ function FindId() {
             <div onClick={() => router.push("/find")}>
               <I.Back />
             </div>
-            <I.smallLogo />
+            <I.SmallLogo />
             <EmptyCompo />
           </Title>
           <S.Title>아이디 찾기</S.Title>

@@ -210,7 +210,7 @@ export const Logo = () => {
   );
 };
 
-export const smallLogo = () => {
+export const SmallLogo = () => {
   return (
     <svg
       width="71"
