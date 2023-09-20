@@ -1,10 +1,10 @@
-export { Logo, SmallLogo } from "./logo";
-export { Back } from "./back";
-export { Heart, BlankHeart, RedHeart } from "./heart";
-export { SettingIcon } from "./setting";
-export { Plus, BoldPlus } from "./plus";
-export { DeleteButton } from "./delete";
-export { Mail, ColorMail } from "./mail";
-export { Next } from "./next";
+export { Logo, SmallLogo } from "./Logo";
+export { Back } from "./Back";
+export { Heart, BlankHeart, RedHeart } from "./Heart";
+export { SettingIcon } from "./Setting";
+export { Plus, BoldPlus } from "./Plus";
+export { DeleteButton } from "./Delete";
+export { Mail, ColorMail } from "./Mail";
+export { Next } from "./Next";
 export { Calender, ColorCalender } from "./calender";
 export { Hearts } from "./hearts";
